@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.util.*
 
 @Entity(tableName = "day")
-data class Day constructor(@PrimaryKey var date : Date = Date(),
+data class Day constructor(@PrimaryKey(autoGenerate = false) val date : Date = Date(),
                            var dayAmount : Double = 0.0,
                            var hours : Int = 0){
 

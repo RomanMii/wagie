@@ -13,31 +13,38 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
+            android:id="@+id/title_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="title" />
 
         <EditText
+            android:id="@+id/time_from_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="time from" />
 
         <EditText
+            android:id="@+id/time_to_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="time to" />
 
         <EditText
+            android:id="@+id/amount_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="amount" />
 
+
         <EditText
+            android:id="@+id/hour_income_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="day income"/>
+            android:hint="hour income"/>
 
         <Button
+            android:id="@+id/add_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="add period" />

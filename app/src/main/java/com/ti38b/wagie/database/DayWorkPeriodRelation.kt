@@ -8,8 +8,8 @@ import com.ti38b.wagie.database.entities.WorkPeriod
 data class DayWorkPeriodsRelation (
     @Embedded val day: Day,
     @Relation(
-        parentColumn = "date",
-        entityColumn = "dayDate"
+        parentColumn = "id",
+        entityColumn = "dayId"
     )
     val workPeriods: List<WorkPeriod>
 )

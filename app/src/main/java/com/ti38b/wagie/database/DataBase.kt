@@ -6,7 +6,7 @@ import androidx.room.TypeConverters
 import com.ti38b.wagie.database.entities.Day
 import com.ti38b.wagie.database.entities.WorkPeriod
 
-@Database(entities = [ Day::class, WorkPeriod::class ], version = 0)
+@Database(entities = [ Day::class, WorkPeriod::class ], version = 1)
 @TypeConverters(TypeConverter::class)
 abstract class DataBase : RoomDatabase(){
     abstract fun DAO(): DAO

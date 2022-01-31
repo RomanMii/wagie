@@ -7,12 +7,12 @@ import java.util.*
 
 @Entity(tableName = "workPeriod")
 class WorkPeriod constructor(var dayDate: Date,
-                             @PrimaryKey val id: UUID = UUID.randomUUID(),
                              var label : String = "label",
                              var from : String = "00:00",
                              var to : String = "00:00",
-                             var hourIncome : Int = 0,
                              var periodAmount : Double = 0.0,
-                             var workHours : Double = 0.0) {
+                             var workHours : Double = 0.0,
+                             @PrimaryKey val id: UUID = UUID.randomUUID()
+                             ) {
 
 }
